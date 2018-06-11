@@ -1,0 +1,880 @@
+vagrant up; vagrant ssh
+Bringing machine 'otuslinux' up with 'virtualbox' provider...
+==> otuslinux: Importing base box 'centos/7'...
+==> otuslinux: Matching MAC address for NAT networking...
+==> otuslinux: Checking if box 'centos/7' is up to date...
+==> otuslinux: Setting the name of the VM: otuslinux
+==> otuslinux: Clearing any previously set network interfaces...
+==> otuslinux: Preparing network interfaces based on configuration...
+    otuslinux: Adapter 1: nat
+    otuslinux: Adapter 2: hostonly
+==> otuslinux: Forwarding ports...
+    otuslinux: 22 (guest) => 2222 (host) (adapter 1)
+==> otuslinux: Running 'pre-boot' VM customizations...
+==> otuslinux: Booting VM...
+==> otuslinux: Waiting for machine to boot. This may take a few minutes...
+    otuslinux: SSH address: 127.0.0.1:2222
+    otuslinux: SSH username: vagrant
+    otuslinux: SSH auth method: private key
+    otuslinux: Warning: Connection reset. Retrying...
+    otuslinux: Warning: Remote connection disconnect. Retrying...
+    otuslinux: Warning: Connection reset. Retrying...
+    otuslinux: Warning: Remote connection disconnect. Retrying...
+    otuslinux: Warning: Connection reset. Retrying...
+    otuslinux: Warning: Remote connection disconnect. Retrying...
+    otuslinux: Warning: Connection reset. Retrying...
+    otuslinux: Warning: Remote connection disconnect. Retrying...
+    otuslinux: Warning: Connection reset. Retrying...
+    otuslinux: Warning: Remote connection disconnect. Retrying...
+    otuslinux:
+    otuslinux: Vagrant insecure key detected. Vagrant will automatically replace
+    otuslinux: this with a newly generated keypair for better security.
+    otuslinux:
+    otuslinux: Inserting generated public key within guest...
+    otuslinux: Removing insecure key from the guest if it's present...
+    otuslinux: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> otuslinux: Machine booted and ready!
+==> otuslinux: Checking for guest additions in VM...
+    otuslinux: No guest additions were detected on the base box for this VM! Guest
+    otuslinux: additions are required for forwarded ports, shared folders, host only
+    otuslinux: networking, and more. If SSH fails on this machine, please install
+    otuslinux: the guest additions and repackage the box to continue.
+    otuslinux:
+    otuslinux: This is not an error message; everything may continue to work properly,
+    otuslinux: in which case you may ignore this message.
+==> otuslinux: Setting hostname...
+==> otuslinux: Configuring and enabling network interfaces...
+    otuslinux: SSH address: 127.0.0.1:2222
+    otuslinux: SSH username: vagrant
+    otuslinux: SSH auth method: private key
+==> otuslinux: Rsyncing folder: /Users/gis/OTUS/otus-linux/hw3/ => /vagrant
+==> otuslinux: Running provisioner: shell...
+    otuslinux: Running: inline script
+==> otuslinux: Loaded plugins: fastestmirror
+==> otuslinux: Determining fastest mirrors
+==> otuslinux:  * base: centos-mirror.rbc.ru
+==> otuslinux:  * extras: mirror.corbina.net
+==> otuslinux:  * updates: mirror.corbina.net
+==> otuslinux: Resolving Dependencies
+==> otuslinux: --> Running transaction check
+==> otuslinux: ---> Package xfsdump.x86_64 0:3.1.7-1.el7 will be installed
+==> otuslinux: --> Processing Dependency: attr >= 2.0.0 for package: xfsdump-3.1.7-1.el7.x86_64
+==> otuslinux: --> Running transaction check
+==> otuslinux: ---> Package attr.x86_64 0:2.4.46-13.el7 will be installed
+==> otuslinux: --> Finished Dependency Resolution
+==> otuslinux:
+==> otuslinux: Dependencies Resolved
+==> otuslinux:
+==> otuslinux: ================================================================================
+==> otuslinux:  Package          Arch            Version                   Repository     Size
+==> otuslinux: ================================================================================
+==> otuslinux: Installing:
+==> otuslinux:  xfsdump          x86_64          3.1.7-1.el7               base          308 k
+==> otuslinux: Installing for dependencies:
+==> otuslinux:  attr             x86_64          2.4.46-13.el7             base           66 k
+==> otuslinux:
+==> otuslinux: Transaction Summary
+==> otuslinux: ================================================================================
+==> otuslinux: Install  1 Package (+1 Dependent package)
+==> otuslinux:
+==> otuslinux: Total download size: 374 k
+==> otuslinux: Installed size: 1.1 M
+==> otuslinux: Downloading packages:
+==> otuslinux: warning: /var/cache/yum/x86_64/7/base/packages/attr-2.4.46-13.el7.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID f4a80eb5: NOKEY
+==> otuslinux: Public key for attr-2.4.46-13.el7.x86_64.rpm is not installed
+==> otuslinux: --------------------------------------------------------------------------------
+==> otuslinux: Total                                              520 kB/s | 374 kB  00:00
+==> otuslinux: Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+==> otuslinux: Importing GPG key 0xF4A80EB5:
+==> otuslinux:  Userid     : "CentOS-7 Key (CentOS 7 Official Signing Key) <security@centos.org>"
+==> otuslinux:  Fingerprint: 6341 ab27 53d7 8a78 a7c2 7bb1 24c6 a8a7 f4a8 0eb5
+==> otuslinux:  Package    : centos-release-7-5.1804.el7.centos.x86_64 (@anaconda)
+==> otuslinux:  From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+==> otuslinux: Running transaction check
+==> otuslinux: Running transaction test
+==> otuslinux: Transaction test succeeded
+==> otuslinux: Running transaction
+==> otuslinux:   Installing : attr-2.4.46-13.el7.x86_64                                    1/2
+==> otuslinux:
+==> otuslinux:   Installing : xfsdump-3.1.7-1.el7.x86_64                                   2/2
+==> otuslinux:
+==> otuslinux:   Verifying  : attr-2.4.46-13.el7.x86_64                                    1/2
+==> otuslinux:
+==> otuslinux:   Verifying  : xfsdump-3.1.7-1.el7.x86_64                                   2/2
+==> otuslinux:
+==> otuslinux:
+==> otuslinux: Installed:
+==> otuslinux:   xfsdump.x86_64 0:3.1.7-1.el7
+==> otuslinux:
+==> otuslinux: Dependency Installed:
+==> otuslinux:   attr.x86_64 0:2.4.46-13.el7
+==> otuslinux:
+==> otuslinux: Complete!
+[vagrant@otuslinux ~]$ lsblk
+NAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                       8:0    0   40G  0 disk
+|-sda1                    8:1    0    1M  0 part
+|-sda2                    8:2    0    1G  0 part /boot
+`-sda3                    8:3    0   39G  0 part
+  |-VolGroup00-LogVol00 253:0    0 37.5G  0 lvm  /
+  `-VolGroup00-LogVol01 253:1    0  1.5G  0 lvm  [SWAP]
+sdb                       8:16   0   10G  0 disk
+sdc                       8:32   0    1G  0 disk
+sdd                       8:48   0    1G  0 disk
+sde                       8:64   0    1G  0 disk
+sdf                       8:80   0    1G  0 disk
+[vagrant@otuslinux ~]$ sudo -s
+[root@otuslinux vagrant]# script /vagrant/work.log
+Script started, file is /vagrant/work.log
+[root@otuslinux vagrant]# lsblk
+NAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                       8:0    0   40G  0 disk
+|-sda1                    8:1    0    1M  0 part
+|-sda2                    8:2    0    1G  0 part /boot
+`-sda3                    8:3    0   39G  0 part
+  |-VolGroup00-LogVol00 253:0    0 37.5G  0 lvm  /
+  `-VolGroup00-LogVol01 253:1    0  1.5G  0 lvm  [SWAP]
+sdb                       8:16   0   10G  0 disk
+sdc                       8:32   0    1G  0 disk
+sdd                       8:48   0    1G  0 disk
+sde                       8:64   0    1G  0 disk
+sdf                       8:80   0    1G  0 disk
+[root@otuslinux vagrant]# fdisk /dev/sdb
+Welcome to fdisk (util-linux 2.23.2).
+
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+Device does not contain a recognized partition table
+Building a new DOS disklabel with disk identifier 0xdf0f6ce1.
+
+Command (m for help): n
+Partition type:
+   p   primary (0 primary, 0 extended, 4 free)
+   e   extended
+Select (default p):
+Using default response p
+Partition number (1-4, default 1):
+First sector (2048-20971519, default 2048):
+Using default value 2048
+Last sector, +sectors or +size{K,M,G} (2048-20971519, default 20971519): +1G
+Partition 1 of type Linux and of size 1 GiB is set
+
+Command (m for help): n
+Partition type:
+   p   primary (1 primary, 0 extended, 3 free)
+   e   extended
+Select (default p):
+Using default response p
+Partition number (2-4, default 2):
+First sector (2099200-20971519, default 2099200):
+Using default value 2099200
+Last sector, +sectors or +size{K,M,G} (2099200-20971519, default 20971519):
+Using default value 20971519
+Partition 2 of type Linux and of size 9 GiB is set
+
+Command (m for help): t
+Partition number (1,2, default 2):
+Hex code (type L to list all codes): 8e
+Changed type of partition 'Linux' to 'Linux LVM'
+
+Command (m for help): w
+The partition table has been altered!
+
+Calling ioctl() to re-read partition table.
+Syncing disks.
+[root@otuslinux vagrant]# mkfs.xfs /dev/sdb1
+meta-data=/dev/sdb1              isize=512    agcount=4, agsize=65536 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=0, sparse=0
+data     =                       bsize=4096   blocks=262144, imaxpct=25
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
+log      =internal log           bsize=4096   blocks=2560, version=2
+         =                       sectsz=512   sunit=0 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+[root@otuslinux vagrant]# pvcreate /dev/sdb2
+  Physical volume "/dev/sdb2" successfully created.
+[root@otuslinux vagrant]# vgcreate vg_tmp /dev/sdb2
+  Volume group "vg_tmp" successfully created
+[root@otuslinux vagrant]# lvcreate -L 8G -n lv_root vg_tmp
+  Logical volume "lv_root" created.
+[root@otuslinux vagrant]# lvs
+  LV       VG         Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  LogVol00 VolGroup00 -wi-ao---- <37.47g
+  LogVol01 VolGroup00 -wi-ao----   1.50g
+  lv_root  vg_tmp     -wi-a-----   8.00g
+[root@otuslinux vagrant]# lvcreate -l 100%FREE -n lv_swap vg_tmp
+  Logical volume "lv_swap" created.
+[root@otuslinux vagrant]# mkswap -L swap /dev/vg_tmp/lv_swap
+Setting up swapspace version 1, size = 1044476 KiB
+LABEL=swap, UUID=16925aed-6bbf-428c-8bad-a48f0bf6eaa9
+[root@otuslinux vagrant]# mkdir /mnt/root
+[root@otuslinux vagrant]# mkdir /mnt/boot
+[root@otuslinux vagrant]# mkdir -p /mnt/tmpboot
+[root@otuslinux vagrant]# mkdir -p /mnt/tmproot
+[root@otuslinux vagrant]# mount /dev/vg_tmp/lv_root /mnt/tmproot/
+mount: /dev/mapper/vg_tmp-lv_root is write-protected, mounting read-only
+mount: unknown filesystem type '(null)'
+[root@otuslinux vagrant]# mkfs.xfs /dev/vg_tmp/lv_root
+meta-data=/dev/vg_tmp/lv_root    isize=512    agcount=4, agsize=524288 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=0, sparse=0
+data     =                       bsize=4096   blocks=2097152, imaxpct=25
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
+log      =internal log           bsize=4096   blocks=2560, version=2
+         =                       sectsz=512   sunit=0 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+[root@otuslinux vagrant]# mount /dev/vg_tmp/lv_root /mnt/tmproot/
+[root@otuslinux vagrant]# xfsdump -J - / | xfsrestore -J - /mnt/tmproot/
+xfsdump: using file dump (drive_simple) strategy
+xfsdump: version 3.1.7 (dump format 3.0)
+xfsrestore: using file dump (drive_simple) strategy
+xfsrestore: version 3.1.7 (dump format 3.0)
+xfsdump: level 0 dump of otuslinux:/
+xfsdump: dump date: Mon Jun 11 18:14:38 2018
+xfsdump: session id: e45ef416-8a7f-4492-be30-9e698bf0d66f
+xfsdump: session label: ""
+xfsrestore: searching media for dump
+xfsdump: ino map phase 1: constructing initial dump list
+xfsdump: ino map phase 2: skipping (no pruning necessary)
+xfsdump: ino map phase 3: skipping (only one dump stream)
+xfsdump: ino map construction complete
+xfsdump: estimated dump size: 721104192 bytes
+xfsdump: creating dump session media file 0 (media 0, file 0)
+xfsdump: dumping ino map
+xfsdump: dumping directories
+xfsrestore: examining media file 0
+xfsrestore: dump description:
+xfsrestore: hostname: otuslinux
+xfsrestore: mount point: /
+xfsrestore: volume: /dev/mapper/VolGroup00-LogVol00
+xfsrestore: session time: Mon Jun 11 18:14:38 2018
+xfsrestore: level: 0
+xfsrestore: session label: ""
+xfsrestore: media label: ""
+xfsrestore: file system id: b60e9498-0baa-4d9f-90aa-069048217fee
+xfsrestore: session id: e45ef416-8a7f-4492-be30-9e698bf0d66f
+xfsrestore: media id: 39bc6a7a-4f59-4b11-a4b5-7b6275b11699
+xfsrestore: searching media for directory dump
+xfsrestore: reading directories
+xfsdump: dumping non-directory files
+xfsrestore: 2695 directories and 23440 entries processed
+xfsrestore: directory post-processing
+xfsrestore: restoring non-directory files
+xfsdump: ending media file
+xfsdump: media file size 698397504 bytes
+xfsdump: dump size (non-dir files) : 685325864 bytes
+xfsdump: dump complete: 19 seconds elapsed
+xfsdump: Dump Status: SUCCESS
+xfsrestore: restore complete: 19 seconds elapsed
+xfsrestore: Restore Status: SUCCESS
+[root@otuslinux vagrant]# lsblk
+NAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                       8:0    0   40G  0 disk
+|-sda1                    8:1    0    1M  0 part
+|-sda2                    8:2    0    1G  0 part /boot
+`-sda3                    8:3    0   39G  0 part
+  |-VolGroup00-LogVol00 253:0    0 37.5G  0 lvm  /
+  `-VolGroup00-LogVol01 253:1    0  1.5G  0 lvm  [SWAP]
+sdb                       8:16   0   10G  0 disk
+|-sdb1                    8:17   0    1G  0 part
+`-sdb2                    8:18   0    9G  0 part
+  |-vg_tmp-lv_root      253:2    0    8G  0 lvm  /mnt/tmproot
+  `-vg_tmp-lv_swap      253:3    0 1020M  0 lvm
+sdc                       8:32   0    1G  0 disk
+sdd                       8:48   0    1G  0 disk
+sde                       8:64   0    1G  0 disk
+sdf                       8:80   0    1G  0 disk
+[root@otuslinux vagrant]# mount /dev/sdb1 /mnt/tmpboot/
+[root@otuslinux vagrant]# xfsdump -J - /boot | xfsrestore -J - /mnt/tmpboot
+xfsdump: using file dump (drive_simple) strategy
+xfsdump: version 3.1.7 (dump format 3.0)
+xfsrestore: using file dump (drive_simple) strategy
+xfsrestore: version 3.1.7 (dump format 3.0)
+xfsrestore: searching media for dump
+xfsdump: level 0 dump of otuslinux:/boot
+xfsdump: dump date: Mon Jun 11 18:16:15 2018
+xfsdump: session id: d22feec9-41f2-4c92-9a7b-3034bd799e06
+xfsdump: session label: ""
+xfsdump: ino map phase 1: constructing initial dump list
+xfsdump: ino map phase 2: skipping (no pruning necessary)
+xfsdump: ino map phase 3: skipping (only one dump stream)
+xfsdump: ino map construction complete
+xfsdump: estimated dump size: 31746048 bytes
+xfsdump: creating dump session media file 0 (media 0, file 0)
+xfsdump: dumping ino map
+xfsdump: dumping directories
+xfsdump: dumping non-directory files
+xfsrestore: examining media file 0
+xfsrestore: dump description:
+xfsrestore: hostname: otuslinux
+xfsrestore: mount point: /boot
+xfsrestore: volume: /dev/sda2
+xfsrestore: session time: Mon Jun 11 18:16:15 2018
+xfsrestore: level: 0
+xfsrestore: session label: ""
+xfsrestore: media label: ""
+xfsrestore: file system id: 570897ca-e759-4c81-90cf-389da6eee4cc
+xfsrestore: session id: d22feec9-41f2-4c92-9a7b-3034bd799e06
+xfsrestore: media id: 7dc21a8f-446d-4b84-baef-0d229a9e59b9
+xfsrestore: searching media for directory dump
+xfsrestore: reading directories
+xfsrestore: 9 directories and 287 entries processed
+xfsrestore: directory post-processing
+xfsrestore: restoring non-directory files
+xfsdump: ending media file
+xfsdump: media file size 31370616 bytes
+xfsdump: dump size (non-dir files) : 31162768 bytes
+xfsdump: dump complete: 0 seconds elapsed
+xfsdump: Dump Status: SUCCESS
+xfsrestore: restore complete: 0 seconds elapsed
+xfsrestore: Restore Status: SUCCESS
+[root@otuslinux vagrant]# lsblk
+NAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                       8:0    0   40G  0 disk
+|-sda1                    8:1    0    1M  0 part
+|-sda2                    8:2    0    1G  0 part /boot
+`-sda3                    8:3    0   39G  0 part
+  |-VolGroup00-LogVol00 253:0    0 37.5G  0 lvm  /
+  `-VolGroup00-LogVol01 253:1    0  1.5G  0 lvm  [SWAP]
+sdb                       8:16   0   10G  0 disk
+|-sdb1                    8:17   0    1G  0 part /mnt/tmpboot
+`-sdb2                    8:18   0    9G  0 part
+  |-vg_tmp-lv_root      253:2    0    8G  0 lvm  /mnt/tmproot
+  `-vg_tmp-lv_swap      253:3    0 1020M  0 lvm
+sdc                       8:32   0    1G  0 disk
+sdd                       8:48   0    1G  0 disk
+sde                       8:64   0    1G  0 disk
+sdf                       8:80   0    1G  0 disk
+[root@otuslinux vagrant]# blkid
+/dev/sda2: UUID="570897ca-e759-4c81-90cf-389da6eee4cc" TYPE="xfs"
+/dev/sda3: UUID="vrrtbx-g480-HcJI-5wLn-4aOf-Olld-rC03AY" TYPE="LVM2_member"
+/dev/sdb1: UUID="59915fa9-d752-46c3-b1a8-2d7eaba21e03" TYPE="xfs"
+/dev/sdb2: UUID="GTZrTI-45jG-nIWd-vkme-olGH-rGgD-nsWSLZ" TYPE="LVM2_member"
+/dev/mapper/VolGroup00-LogVol00: UUID="b60e9498-0baa-4d9f-90aa-069048217fee" TYPE="xfs"
+/dev/mapper/VolGroup00-LogVol01: UUID="c39c5bed-f37c-4263-bee8-aeb6a6659d7b" TYPE="swap"
+/dev/mapper/vg_tmp-lv_root: UUID="0f309100-7788-4a16-9c61-bcf4bee6bf6f" TYPE="xfs"
+/dev/mapper/vg_tmp-lv_swap: LABEL="swap" UUID="16925aed-6bbf-428c-8bad-a48f0bf6eaa9" TYPE="swap"
+[root@otuslinux vagrant]# sed -i "s/570897ca-e759-4c81-90cf-389da6eee4cc/59915fa9-d752-46c3-b1a8-2d7eaba21e03/g" /mnt/tmpboot/grub2/grub.cfg
+[root@otuslinux vagrant]# sed -i "s/570897ca-e759-4c81-90cf-389da6eee4cc/59915fa9-d752-46c3-b1a8-2d7eaba21e03/g" /mnt/tmproot/etc/fstab
+[root@otuslinux vagrant]# umount /mnt*
+umount: /mnt: not mounted
+[root@otuslinux vagrant]# umount /mnt/*
+umount: /mnt/boot: not mounted
+umount: /mnt/root: not mounted
+[root@otuslinux vagrant]# lsblk
+NAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                       8:0    0   40G  0 disk
+|-sda1                    8:1    0    1M  0 part
+|-sda2                    8:2    0    1G  0 part /boot
+`-sda3                    8:3    0   39G  0 part
+  |-VolGroup00-LogVol00 253:0    0 37.5G  0 lvm  /
+  `-VolGroup00-LogVol01 253:1    0  1.5G  0 lvm  [SWAP]
+sdb                       8:16   0   10G  0 disk
+|-sdb1                    8:17   0    1G  0 part
+`-sdb2                    8:18   0    9G  0 part
+  |-vg_tmp-lv_root      253:2    0    8G  0 lvm
+  `-vg_tmp-lv_swap      253:3    0 1020M  0 lvm
+sdc                       8:32   0    1G  0 disk
+sdd                       8:48   0    1G  0 disk
+sde                       8:64   0    1G  0 disk
+sdf                       8:80   0    1G  0 disk
+[root@otuslinux vagrant]# vgrename VolGroup00 VolGroup00_origin
+  Volume group "VolGroup00" successfully renamed to "VolGroup00_origin"
+[root@otuslinux vagrant]# lvs
+  LV       VG                Attr       LSize    Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  LogVol00 VolGroup00_origin -wi-ao----  <37.47g
+  LogVol01 VolGroup00_origin -wi-ao----    1.50g
+  lv_root  vg_tmp            -wi-a-----    8.00g
+  lv_swap  vg_tmp            -wi-a----- 1020.00m
+[root@otuslinux vagrant]# vgrename vg_tmp VolGroup00
+  Volume group "vg_tmp" successfully renamed to "VolGroup00"
+[root@otuslinux vagrant]# lvrename -v VolGroup00 lv_root LogVol00
+    Archiving volume group "VolGroup00" metadata (seqno 4).
+    Loading table for VolGroup00-lv_root (253:2).
+    Suppressed VolGroup00-lv_root (253:2) identical table reload.
+    Suspending VolGroup00-lv_root (253:2) with device flush
+    Loading table for VolGroup00-lv_root (253:2).
+    Suppressed VolGroup00-lv_root (253:2) identical table reload.
+    Renaming VolGroup00-lv_root (253:2) to VolGroup00-LogVol00
+    Resuming VolGroup00-LogVol00 (253:2).
+    Creating volume group backup "/etc/lvm/backup/VolGroup00" (seqno 5).
+  Renamed "lv_root" to "LogVol00" in volume group "VolGroup00"
+[root@otuslinux vagrant]# lvrename -v VolGroup00 lv_swap LogVol01
+    Archiving volume group "VolGroup00" metadata (seqno 5).
+    Loading table for VolGroup00-lv_swap (253:3).
+    Suppressed VolGroup00-lv_swap (253:3) identical table reload.
+    Suspending VolGroup00-lv_swap (253:3) with device flush
+    Loading table for VolGroup00-lv_swap (253:3).
+    Suppressed VolGroup00-lv_swap (253:3) identical table reload.
+    Renaming VolGroup00-lv_swap (253:3) to VolGroup00-LogVol01
+    Resuming VolGroup00-LogVol01 (253:3).
+    Creating volume group backup "/etc/lvm/backup/VolGroup00" (seqno 6).
+  Renamed "lv_swap" to "LogVol01" in volume group "VolGroup00"
+[root@otuslinux vagrant]# mount /dev/VolGroup00/LogVol00 /mnt
+[root@otuslinux vagrant]# mount /dev/sdb1 /mnt/boot
+[root@otuslinux vagrant]# mount -t devtmpfs /dev /mnt/dev
+[root@otuslinux vagrant]# mount -t proc /proc /mnt/proc
+[root@otuslinux vagrant]# mount -t sysfs /sys /mnt/sys
+[root@otuslinux vagrant]# chroot /mnt/ grub2-install /dev/sdb
+Installing for i386-pc platform.
+Installation finished. No error reported.
+[root@otuslinux vagrant]# reboot
+Connection to 127.0.0.1 closed by remote host.
+Connection to 127.0.0.1 closed.
+{18-06-11 21:24}iMac-Gavrilov:~/OTUS/otus-linux/hw3@master✗✗✗✗✗✗ gis% vagrant ssh
+Last login: Mon Jun 11 16:38:28 2018 from 10.0.2.2
+[vagrant@otuslinux ~]$ lsblk
+NAME                           MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                              8:0    0   40G  0 disk
+|-sda1                           8:1    0    1M  0 part
+|-sda2                           8:2    0    1G  0 part
+`-sda3                           8:3    0   39G  0 part
+  |-VolGroup00_origin-LogVol00 253:2    0 37.5G  0 lvm
+  `-VolGroup00_origin-LogVol01 253:3    0  1.5G  0 lvm
+sdb                              8:16   0   10G  0 disk
+|-sdb1                           8:17   0    1G  0 part /boot
+`-sdb2                           8:18   0    9G  0 part
+  |-VolGroup00-LogVol00        253:0    0    8G  0 lvm  /
+  `-VolGroup00-LogVol01        253:1    0 1020M  0 lvm  [SWAP]
+sdc                              8:32   0    1G  0 disk
+sdd                              8:48   0    1G  0 disk
+sde                              8:64   0    1G  0 disk
+sdf                              8:80   0    1G  0 disk
+[vagrant@otuslinux ~]$sudo -s
+[root@otuslinux vagrant]# lvscan
+  ACTIVE            '/dev/VolGroup00_origin/LogVol00' [<37.47 GiB] inherit
+  ACTIVE            '/dev/VolGroup00_origin/LogVol01' [1.50 GiB] inherit
+  ACTIVE            '/dev/VolGroup00/LogVol00' [8.00 GiB] inherit
+  ACTIVE            '/dev/VolGroup00/LogVol01' [1020.00 MiB] inherit
+[root@otuslinux vagrant]# lvremove /dev/VolGroup00_origin/LogVol00
+Do you really want to remove active logical volume VolGroup00_origin/LogVol00? [y/n]: y
+  Logical volume "LogVol00" successfully removed
+[root@otuslinux vagrant]# lvcreate -L 8G VolGroup00_origin -n LogVol00
+WARNING: xfs signature detected on /dev/VolGroup00_origin/LogVol00 at offset 0. Wipe it? [y/n]: y
+  Wiping xfs signature on /dev/VolGroup00_origin/LogVol00.
+  Logical volume "LogVol00" created.
+[root@otuslinux vagrant]# pvcreate /dev/sdc /dev/sdd
+  Physical volume "/dev/sdc" successfully created.
+  Physical volume "/dev/sdd" successfully created.
+[root@otuslinux vagrant]# lvs
+  LV       VG                Attr       LSize    Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  LogVol00 VolGroup00        -wi-ao----    8.00g
+  LogVol01 VolGroup00        -wi-ao---- 1020.00m
+  LogVol00 VolGroup00_origin -wi-a-----    8.00g
+  LogVol01 VolGroup00_origin -wi-a-----    1.50g
+[root@otuslinux vagrant]# mkfs.xfs /dev/VolGroup00_origin/LogVol00
+meta-data=/dev/VolGroup00_origin/LogVol00 isize=512    agcount=4, agsize=524288 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=0, sparse=0
+data     =                       bsize=4096   blocks=2097152, imaxpct=25
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
+log      =internal log           bsize=4096   blocks=2560, version=2
+         =                       sectsz=512   sunit=0 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+[root@otuslinux vagrant]# mount /dev/VolGroup00_origin/LogVol00 /mnt/
+[root@otuslinux vagrant]# xfsdump -J - / | xfsrestore -J - /mnt
+xfsdump: using file dump (drive_simple) strategy
+xfsdump: version 3.1.7 (dump format 3.0)
+xfsrestore: using file dump (drive_simple) strategy
+xfsrestore: version 3.1.7 (dump format 3.0)
+xfsdump: level 0 dump of otuslinux:/
+xfsdump: dump date: Mon Jun 11 18:37:14 2018
+xfsdump: session id: bca700b3-cee5-4de5-9bf4-13658503a33e
+xfsdump: session label: ""
+xfsrestore: searching media for dump
+xfsdump: ino map phase 1: constructing initial dump list
+xfsdump: ino map phase 2: skipping (no pruning necessary)
+xfsdump: ino map phase 3: skipping (only one dump stream)
+xfsdump: ino map construction complete
+xfsdump: estimated dump size: 719738688 bytes
+xfsdump: creating dump session media file 0 (media 0, file 0)
+xfsdump: dumping ino map
+xfsdump: dumping directories
+xfsrestore: examining media file 0
+xfsrestore: dump description:
+xfsrestore: hostname: otuslinux
+xfsrestore: mount point: /
+xfsrestore: volume: /dev/mapper/VolGroup00-LogVol00
+xfsrestore: session time: Mon Jun 11 18:37:14 2018
+xfsrestore: level: 0
+xfsrestore: session label: ""
+xfsrestore: media label: ""
+xfsrestore: file system id: 0f309100-7788-4a16-9c61-bcf4bee6bf6f
+xfsrestore: session id: bca700b3-cee5-4de5-9bf4-13658503a33e
+xfsrestore: media id: e7354070-efc4-47d5-99b8-944abd5d9760
+xfsrestore: searching media for directory dump
+xfsrestore: reading directories
+xfsdump: dumping non-directory files
+xfsrestore: 2699 directories and 23448 entries processed
+xfsrestore: directory post-processing
+xfsrestore: restoring non-directory files
+xfsdump: ending media file
+xfsdump: media file size 697063016 bytes
+xfsdump: dump size (non-dir files) : 683985640 bytes
+xfsdump: dump complete: 20 seconds elapsed
+xfsdump: Dump Status: SUCCESS
+xfsrestore: restore complete: 20 seconds elapsed
+xfsrestore: Restore Status: SUCCESS
+[root@otuslinux vagrant]# blkid
+/dev/sda2: UUID="570897ca-e759-4c81-90cf-389da6eee4cc" TYPE="xfs"
+/dev/sda3: UUID="vrrtbx-g480-HcJI-5wLn-4aOf-Olld-rC03AY" TYPE="LVM2_member"
+/dev/sdb1: UUID="59915fa9-d752-46c3-b1a8-2d7eaba21e03" TYPE="xfs"
+/dev/sdb2: UUID="GTZrTI-45jG-nIWd-vkme-olGH-rGgD-nsWSLZ" TYPE="LVM2_member"
+/dev/sdc: UUID="B2uZsC-veIR-9ySc-K5vw-Hb8t-tV4N-bG1CR9" TYPE="LVM2_member"
+/dev/sdd: UUID="JIpaU6-noHS-zap7-y2cK-K46H-rAFh-eQIQ84" TYPE="LVM2_member"
+/dev/mapper/VolGroup00-LogVol00: UUID="0f309100-7788-4a16-9c61-bcf4bee6bf6f" TYPE="xfs"
+/dev/mapper/VolGroup00-LogVol01: LABEL="swap" UUID="16925aed-6bbf-428c-8bad-a48f0bf6eaa9" TYPE="swap"
+/dev/mapper/VolGroup00_origin-LogVol01: UUID="c39c5bed-f37c-4263-bee8-aeb6a6659d7b" TYPE="swap"
+/dev/mapper/VolGroup00_origin-LogVol00: UUID="8b610b30-37e7-42a7-9f2c-41c1f8ef9d16" TYPE="xfs"
+[root@otuslinux vagrant]# lsblk
+NAME                           MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                              8:0    0   40G  0 disk
+|-sda1                           8:1    0    1M  0 part
+|-sda2                           8:2    0    1G  0 part
+`-sda3                           8:3    0   39G  0 part
+  |-VolGroup00_origin-LogVol00 253:2    0    8G  0 lvm  /mnt
+  `-VolGroup00_origin-LogVol01 253:3    0  1.5G  0 lvm
+sdb                              8:16   0   10G  0 disk
+|-sdb1                           8:17   0    1G  0 part /boot
+`-sdb2                           8:18   0    9G  0 part
+  |-VolGroup00-LogVol00        253:0    0    8G  0 lvm  /
+  `-VolGroup00-LogVol01        253:1    0 1020M  0 lvm  [SWAP]
+sdc                              8:32   0    1G  0 disk
+sdd                              8:48   0    1G  0 disk
+sde                              8:64   0    1G  0 disk
+sdf                              8:80   0    1G  0 disk
+[root@otuslinux vagrant]# sed -i "s/59915fa9-d752-46c3-b1a8-2d7eaba21e03/570897ca-e759-4c81-90cf-389da6eee4cc/g" /mnt/etc/fstab
+[root@otuslinux vagrant]# mount /dev/sda2 /mnt/boot
+[root@otuslinux vagrant]# sed -i "s/59915fa9-d752-46c3-b1a8-2d7eaba21e03/570897ca-e759-4c81-90cf-389da6eee4cc/g" /mnt/boot/grub2/grub.cfg
+[root@otuslinux vagrant]# mount -t devtmpfs /dev /mnt/dev
+[root@otuslinux vagrant]# mount -t proc /proc /mnt/proc
+[root@otuslinux vagrant]# mount -t sysfs /sys /mnt/sys
+[root@otuslinux vagrant]# chroot /mnt/ grub2-install /dev/sda
+Installing for i386-pc platform.
+Installation finished. No error reported.
+[root@otuslinux vagrant]# reboot
+Connection to 127.0.0.1 closed by remote host.
+Connection to 127.0.0.1 closed.
+{18-06-11 21:41}iMac-Gavrilov:~/OTUS/otus-linux/hw3@master✗✗✗✗✗✗ gis% vagrant ssh
+Last login: Mon Jun 11 18:24:58 2018 from 10.0.2.2
+[vagrant@otuslinux ~]$ lsblk
+NAME                           MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                              8:0    0   40G  0 disk
+|-sda1                           8:1    0    1M  0 part
+|-sda2                           8:2    0    1G  0 part
+`-sda3                           8:3    0   39G  0 part
+  |-VolGroup00_origin-LogVol01 253:2    0  1.5G  0 lvm
+  `-VolGroup00_origin-LogVol00 253:3    0    8G  0 lvm
+sdb                              8:16   0   10G  0 disk
+|-sdb1                           8:17   0    1G  0 part /boot
+`-sdb2                           8:18   0    9G  0 part
+  |-VolGroup00-LogVol00        253:0    0    8G  0 lvm  /
+  `-VolGroup00-LogVol01        253:1    0 1020M  0 lvm  [SWAP]
+sdc                              8:32   0    1G  0 disk
+sdd                              8:48   0    1G  0 disk
+sde                              8:64   0    1G  0 disk
+sdf                              8:80   0    1G  0 disk
+[vagrant@otuslinux ~]$ sudo -s
+[root@otuslinux vagrant]# vgrename -v VolGroup00 VolGroup00_tmp
+    Wiping cache of LVM-capable devices
+    Archiving volume group "VolGroup00" metadata (seqno 6).
+    Writing out updated volume group
+    Renaming "/dev/VolGroup00" to "/dev/VolGroup00_tmp"
+    Loading table for VolGroup00-LogVol00 (253:0).
+    Suppressed VolGroup00-LogVol00 (253:0) identical table reload.
+    Suspending VolGroup00-LogVol00 (253:0) with device flush
+    Loading table for VolGroup00-LogVol00 (253:0).
+    Suppressed VolGroup00-LogVol00 (253:0) identical table reload.
+    Renaming VolGroup00-LogVol00 (253:0) to VolGroup00_tmp-LogVol00
+    Resuming VolGroup00_tmp-LogVol00 (253:0).
+    Loading table for VolGroup00-LogVol01 (253:1).
+    Suppressed VolGroup00-LogVol01 (253:1) identical table reload.
+    Suspending VolGroup00-LogVol01 (253:1) with device flush
+    Loading table for VolGroup00-LogVol01 (253:1).
+    Suppressed VolGroup00-LogVol01 (253:1) identical table reload.
+    Renaming VolGroup00-LogVol01 (253:1) to VolGroup00_tmp-LogVol01
+    Resuming VolGroup00_tmp-LogVol01 (253:1).
+    Creating volume group backup "/etc/lvm/backup/VolGroup00_tmp" (seqno 7).
+  Volume group "VolGroup00" successfully renamed to "VolGroup00_tmp"
+[root@otuslinux vagrant]# vgrename -v VolGroup00_origin VolGroup00
+    Wiping cache of LVM-capable devices
+    Archiving volume group "VolGroup00_origin" metadata (seqno 6).
+    Writing out updated volume group
+    Renaming "/dev/VolGroup00_origin" to "/dev/VolGroup00"
+    Loading table for VolGroup00_origin-LogVol01 (253:2).
+    Suppressed VolGroup00_origin-LogVol01 (253:2) identical table reload.
+    Suspending VolGroup00_origin-LogVol01 (253:2) with device flush
+    Loading table for VolGroup00_origin-LogVol01 (253:2).
+    Suppressed VolGroup00_origin-LogVol01 (253:2) identical table reload.
+    Renaming VolGroup00_origin-LogVol01 (253:2) to VolGroup00-LogVol01
+    Resuming VolGroup00-LogVol01 (253:2).
+    Loading table for VolGroup00_origin-LogVol00 (253:3).
+    Suppressed VolGroup00_origin-LogVol00 (253:3) identical table reload.
+    Suspending VolGroup00_origin-LogVol00 (253:3) with device flush
+    Loading table for VolGroup00_origin-LogVol00 (253:3).
+    Suppressed VolGroup00_origin-LogVol00 (253:3) identical table reload.
+    Renaming VolGroup00_origin-LogVol00 (253:3) to VolGroup00-LogVol00
+    Resuming VolGroup00-LogVol00 (253:3).
+    Creating volume group backup "/etc/lvm/backup/VolGroup00" (seqno 7).
+  Volume group "VolGroup00_origin" successfully renamed to "VolGroup00"
+[root@otuslinux vagrant]# reboot
+Connection to 127.0.0.1 closed by remote host.
+Connection to 127.0.0.1 closed.
+{18-06-11 21:45}iMac-Gavrilov:~/OTUS/otus-linux/hw3@master✗✗✗✗✗✗ gis% vagrant ssh
+Last login: Mon Jun 11 18:24:58 2018 from 10.0.2.2
+[vagrant@otuslinux ~]$ lsblk
+NAME                        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                           8:0    0   40G  0 disk
+|-sda1                        8:1    0    1M  0 part
+|-sda2                        8:2    0    1G  0 part /boot
+`-sda3                        8:3    0   39G  0 part
+  |-VolGroup00-LogVol00     253:0    0    8G  0 lvm  /
+  `-VolGroup00-LogVol01     253:1    0  1.5G  0 lvm  [SWAP]
+sdb                           8:16   0   10G  0 disk
+|-sdb1                        8:17   0    1G  0 part
+`-sdb2                        8:18   0    9G  0 part
+  |-VolGroup00_tmp-LogVol00 253:2    0    8G  0 lvm
+  `-VolGroup00_tmp-LogVol01 253:3    0 1020M  0 lvm
+sdc                           8:32   0    1G  0 disk
+sdd                           8:48   0    1G  0 disk
+sde                           8:64   0    1G  0 disk
+sdf                           8:80   0    1G  0 disk
+[vagrant@otuslinux ~]$ sudo -s
+[root@otuslinux vagrant]# pvcreate /dev/sdc /dev/sdd
+  Physical volume "/dev/sdc" successfully created.
+  Physical volume "/dev/sdd" successfully created.
+[root@otuslinux vagrant]# vgcreate vg_var /dev/sdc /dev/sdd
+  Volume group "vg_var" successfully created
+[root@otuslinux vagrant]# lvcreate -L 950M -m1 -n lv_var vg_var
+  Rounding up size to full physical extent 952.00 MiB
+  Logical volume "lv_var" created.
+[root@otuslinux vagrant]# mkfs.ext4 /dev/vg_var/lv_var
+mke2fs 1.42.9 (28-Dec-2013)
+Filesystem label=
+OS type: Linux
+Block size=4096 (log=2)
+Fragment size=4096 (log=2)
+Stride=0 blocks, Stripe width=0 blocks
+60928 inodes, 243712 blocks
+12185 blocks (5.00%) reserved for the super user
+First data block=0
+Maximum filesystem blocks=249561088
+8 block groups
+32768 blocks per group, 32768 fragments per group
+7616 inodes per group
+Superblock backups stored on blocks:
+        32768, 98304, 163840, 229376
+
+Allocating group tables: done
+Writing inode tables: done
+Creating journal (4096 blocks): done
+Writing superblocks and filesystem accounting information: done
+
+[root@otuslinux vagrant]# mount /dev/vg_var/lv_var /mnt
+[root@otuslinux vagrant]# cp -aR /var/* /mnt/          # rsync -avHPSAX /var/ /mnt/
+[root@otuslinux vagrant]# mkdir /tmp/oldvar
+mkdir: cannot create directory '/tmp/oldvar': File exists
+[root@otuslinux vagrant]# mv /var/* /tmp/oldvar
+mv: cannot move '/var/tmp' to '/tmp/oldvar/tmp': Device or resource busy
+[root@otuslinux vagrant]# umount /mnt
+[root@otuslinux vagrant]# mount /dev/vg_var/lv_var /var
+[root@otuslinux vagrant]# lsblk
+NAME                        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                           8:0    0   40G  0 disk
+|-sda1                        8:1    0    1M  0 part
+|-sda2                        8:2    0    1G  0 part /boot
+`-sda3                        8:3    0   39G  0 part
+  |-VolGroup00-LogVol00     253:0    0    8G  0 lvm  /
+  `-VolGroup00-LogVol01     253:1    0  1.5G  0 lvm  [SWAP]
+sdb                           8:16   0   10G  0 disk
+|-sdb1                        8:17   0    1G  0 part
+`-sdb2                        8:18   0    9G  0 part
+  |-VolGroup00_tmp-LogVol00 253:2    0    8G  0 lvm
+  `-VolGroup00_tmp-LogVol01 253:3    0 1020M  0 lvm
+sdc                           8:32   0    1G  0 disk
+|-vg_var-lv_var_rmeta_0     253:4    0    4M  0 lvm
+| `-vg_var-lv_var           253:8    0  952M  0 lvm  /var
+`-vg_var-lv_var_rimage_0    253:5    0  952M  0 lvm
+  `-vg_var-lv_var           253:8    0  952M  0 lvm  /var
+sdd                           8:48   0    1G  0 disk
+|-vg_var-lv_var_rmeta_1     253:6    0    4M  0 lvm
+| `-vg_var-lv_var           253:8    0  952M  0 lvm  /var
+`-vg_var-lv_var_rimage_1    253:7    0  952M  0 lvm
+  `-vg_var-lv_var           253:8    0  952M  0 lvm  /var
+sde                           8:64   0    1G  0 disk
+sdf                           8:80   0    1G  0 disk
+[root@otuslinux vagrant]# df -Th
+Filesystem                      Type      Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-LogVol00 xfs       8.0G  724M  7.3G   9% /
+devtmpfs                        devtmpfs   81M     0   81M   0% /dev
+tmpfs                           tmpfs      90M     0   90M   0% /dev/shm
+tmpfs                           tmpfs      90M  4.6M   86M   6% /run
+tmpfs                           tmpfs      90M     0   90M   0% /sys/fs/cgroup
+/dev/sda2                       xfs      1014M   63M  952M   7% /boot
+tmpfs                           tmpfs      18M     0   18M   0% /run/user/1000
+/dev/mapper/vg_var-lv_var       ext4      922M  104M  755M  13% /var
+[root@otuslinux vagrant]#
+[root@otuslinux vagrant]# vi /etc/fstab
+[root@otuslinux vagrant]# lvremove VolGroup00_tmp LogVol00
+Do you really want to remove active logical volume VolGroup00_tmp/LogVol00? [y/n]: y
+  Logical volume "LogVol00" successfully removed
+Do you really want to remove active logical volume VolGroup00_tmp/LogVol01? [y/n]: y
+  Logical volume "LogVol01" successfully removed
+  Volume group "LogVol00" not found
+  Cannot process volume group LogVol00
+[root@otuslinux vagrant]# vgremove /dev/VolGroup_tmp/
+  Invalid volume group name VolGroup_tmp/.
+  Run `vgremove --help' for more information.
+[root@otuslinux vagrant]# vgremove /dev/VolGroup_tmp
+  Volume group "VolGroup_tmp" not found
+  Cannot process volume group VolGroup_tmp
+[root@otuslinux vagrant]# vgs
+  VG             #PV #LV #SN Attr   VSize   VFree
+  VolGroup00       1   2   0 wz--n- <38.97g <29.47g
+  VolGroup00_tmp   1   0   0 wz--n-  <9.00g  <9.00g
+  vg_var           2   1   0 wz--n-   1.99g 128.00m
+[root@otuslinux vagrant]# vgremove VolGroup00_tmp
+  Volume group "VolGroup00_tmp" successfully removed
+[root@otuslinux vagrant]# pvremove sdb2
+  Device sdb2 not found.
+[root@otuslinux vagrant]# pvremove /dev/sdb2
+  Labels on physical volume "/dev/sdb2" successfully wiped.
+[root@otuslinux vagrant]# pvs
+  PV         VG         Fmt  Attr PSize    PFree
+  /dev/sda3  VolGroup00 lvm2 a--   <38.97g <29.47g
+  /dev/sdc   vg_var     lvm2 a--  1020.00m  64.00m
+  /dev/sdd   vg_var     lvm2 a--  1020.00m  64.00m
+[root@otuslinux vagrant]# lvcreate -n LogVol_Home -L 2G /dev/VolGroup00
+  Logical volume "LogVol_Home" created.
+[root@otuslinux vagrant]# mkfs.xfs /dev/VolGroup00/LogVol_Home
+meta-data=/dev/VolGroup00/LogVol_Home isize=512    agcount=4, agsize=131072 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=0, sparse=0
+data     =                       bsize=4096   blocks=524288, imaxpct=25
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
+log      =internal log           bsize=4096   blocks=2560, version=2
+         =                       sectsz=512   sunit=0 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+[root@otuslinux vagrant]# mount /dev/VolGroup00/LogVol_Home /mnt/
+[root@otuslinux vagrant]# cp -aR /home/* /mnt/
+[root@otuslinux vagrant]# rm -rf /home/*
+[root@otuslinux vagrant]# umount /mnt
+[root@otuslinux vagrant]# mount /dev/VolGroup00/LogVol_Home /home/
+[root@otuslinux vagrant]# lvs
+  LV          VG         Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  LogVol00    VolGroup00 -wi-ao----   8.00g
+  LogVol01    VolGroup00 -wi-ao----   1.50g
+  LogVol_Home VolGroup00 -wi-ao----   2.00g
+  lv_var      vg_var     rwi-aor--- 952.00m                                    100.00
+[root@otuslinux vagrant]# lsblk
+NAME                       MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                          8:0    0   40G  0 disk
+|-sda1                       8:1    0    1M  0 part
+|-sda2                       8:2    0    1G  0 part /boot
+`-sda3                       8:3    0   39G  0 part
+  |-VolGroup00-LogVol00    253:0    0    8G  0 lvm  /
+  |-VolGroup00-LogVol01    253:1    0  1.5G  0 lvm  [SWAP]
+  `-VolGroup00-LogVol_Home 253:2    0    2G  0 lvm  /home
+sdb                          8:16   0   10G  0 disk
+|-sdb1                       8:17   0    1G  0 part
+`-sdb2                       8:18   0    9G  0 part
+sdc                          8:32   0    1G  0 disk
+|-vg_var-lv_var_rmeta_0    253:4    0    4M  0 lvm
+| `-vg_var-lv_var          253:8    0  952M  0 lvm  /var
+`-vg_var-lv_var_rimage_0   253:5    0  952M  0 lvm
+  `-vg_var-lv_var          253:8    0  952M  0 lvm  /var
+sdd                          8:48   0    1G  0 disk
+|-vg_var-lv_var_rmeta_1    253:6    0    4M  0 lvm
+| `-vg_var-lv_var          253:8    0  952M  0 lvm  /var
+`-vg_var-lv_var_rimage_1   253:7    0  952M  0 lvm
+  `-vg_var-lv_var          253:8    0  952M  0 lvm  /var
+sde                          8:64   0    1G  0 disk
+sdf                          8:80   0    1G  0 disk
+[root@otuslinux vagrant]# df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-LogVol00     8.0G  724M  7.3G   9% /
+devtmpfs                             81M     0   81M   0% /dev
+tmpfs                                90M     0   90M   0% /dev/shm
+tmpfs                                90M  4.6M   86M   6% /run
+tmpfs                                90M     0   90M   0% /sys/fs/cgroup
+/dev/sda2                          1014M   63M  952M   7% /boot
+tmpfs                                18M     0   18M   0% /run/user/1000
+/dev/mapper/vg_var-lv_var           922M  104M  755M  13% /var
+/dev/mapper/VolGroup00-LogVol_Home  2.0G   33M  2.0G   2% /home
+[root@otuslinux vagrant]# vim /etc/fstab
+bash: vim: command not found
+[root@otuslinux vagrant]# vi /etc/fstab
+[root@otuslinux vagrant]# touch /home/file{1..20}
+[root@otuslinux vagrant]# lvcreate -L 2GB -s -n home_snap /dev/VolGroup00/LogVol_Home
+  Logical volume "home_snap" created.
+[root@otuslinux vagrant]# ll /home/
+total 0
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file1
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file10
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file11
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file12
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file13
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file14
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file15
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file16
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file17
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file18
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file19
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file2
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file20
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file3
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file4
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file5
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file6
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file7
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file8
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file9
+drwx------. 3 vagrant vagrant 74 May 12 18:54 vagrant
+[root@otuslinux vagrant]# rm -f /home/file{11..20}
+[root@otuslinux vagrant]# ll /home
+total 0
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file1
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file10
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file2
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file3
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file4
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file5
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file6
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file7
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file8
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file9
+drwx------. 3 vagrant vagrant 74 May 12 18:54 vagrant
+[root@otuslinux vagrant]# umount /home
+[root@otuslinux vagrant]# lvconvert --merge /dev/VolGroup00/home_snap
+  Merging of volume VolGroup00/home_snap started.
+  VolGroup00/LogVol_Home: Merged: 100.00%
+[root@otuslinux vagrant]# mount /home
+[root@otuslinux vagrant]# ll /home/
+total 0
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file1
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file10
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file11
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file12
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file13
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file14
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file15
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file16
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file17
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file18
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file19
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file2
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file20
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file3
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file4
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file5
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file6
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file7
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file8
+-rw-r--r--. 1 root    root     0 Jun 11 19:06 file9
+drwx------. 3 vagrant vagrant 74 May 12 18:54 vagrant
+[root@otuslinux vagrant]#
